@@ -1,12 +1,29 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
-import scrapy
+"""Models for scraped items."""
+from scrapy.item import Field, Item
 
 
-class DrugbankItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class DrugItem(Item):
+    id = Field()
+    smiles = Field()
+    scraped_at = Field()
+
+
+class TargetItem(Item):
+    target_id = Field()
+    drug_id = Field()
+    gene_name = Field()
+    scraped_at = Field()
+
+
+class ActionItem(Item):
+    target_id = Field()
+    name = Field()
+    scraped_at = Field()
+
+
+class ExternalIdentifierItem(Item):
+    target_id = Field()
+    name = Field()
+    value = Field()
+    url = Field()
+    scraped_at = Field()
