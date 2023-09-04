@@ -12,6 +12,7 @@ LOG_LEVEL = "WARNING"
 SPIDER_MODULES = ["drugbank.spiders"]
 NEWSPIDER_MODULE = "drugbank.spiders"
 
+REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'drugbank (+http://www.yourdomain.com)'
