@@ -24,7 +24,6 @@ class DrugSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
-
         drug = DrugItem()
 
         drugbank_id = response.url.split("/")[-1]
@@ -76,7 +75,6 @@ class DrugSpider(scrapy.Spider):
             if target_details_link := target.xpath(
                 './/div[@class="card-header"]/a/@href'
             ).get():
-
                 yield scrapy.Request(
                     response.urljoin(target_details_link),
                     callback=self.process_target_details,

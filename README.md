@@ -2,8 +2,6 @@
 
 ## Run
 
-This repo uses `Python 3.8.5`.
-
 1. See [Pipenv & Virtual Environments](https://docs.python-guide.org/dev/virtualenvs/) guide to create a virtual environment and activate the virtual environment
 1. Install graphviz `brew install graphviz`
 1. Install requirements with `pip install -r requirements.txt`.

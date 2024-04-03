@@ -1,4 +1,5 @@
 """Models for scraped items."""
+
 from scrapy.item import Field, Item
 
 

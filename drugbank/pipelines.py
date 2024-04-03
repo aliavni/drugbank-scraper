@@ -20,7 +20,6 @@ class DrugbankPipeline:
         self.session = self.Session()
 
     def process_item(self, item, spider):
-
         if isinstance(item, DrugItem):
             db_item = Drug(**item)
         elif isinstance(item, ActionItem):
