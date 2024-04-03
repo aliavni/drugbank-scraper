@@ -28,5 +28,5 @@ Run `scrapy crawl drug` to run drug spider and populate database. This will scra
 ## Development
 
 1. See the virtual environment step above.
-1. Install requirements with `pip install -r requirements-dev.txt`.
+1. Install requirements with `pip install -r requirements_dev.txt`.
 1. Run `pre-commit install` to install pre-commit hooks. This repo is already set up to use some pre-commit hooks for code quality purposes. Configuration file is available [here](.pre-commit-config.yaml). More information about pre-commit is available on [their website](https://pre-commit.com/).
